@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 70vh;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #252525;
+}
+
+.grid {
+    width: 100%;
+    position: relative;
+}
+
+.cell {
+    width: 15vh;
+    height: 15vh;
+    margin: 2vmin 2vmin 0 0;
+    background-color: #555555;
+    float: left;
+}
+
+.cell:nth-child(4n+1){
+    margin-left: 2vh;
+}
+
+.number {
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 6rem;
+    background-color: rgb(228, 40, 181);
+    color: #050505;
+    transition: all .3s;
+}
